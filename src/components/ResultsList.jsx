@@ -7,6 +7,7 @@ const ResultList = () => {
       <ResultItem />
       <ResultItem />
       <ResultItem />
+      <ResultItem />
     </div>
   );
 };

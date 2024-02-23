@@ -16,7 +16,7 @@ body {
   padding: 8px 0 14px 0;
   background: #212731;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 200;
 }
 
@@ -55,15 +55,21 @@ body {
   padding: 16px 230px;
 }
 
+/* --------------------Title Section-------------- */
 .titleSection h1 {
   padding: 20px 0 10px 0;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 48px;
+  font-weight: 400;
   color: #2c384a;
 }
 
 .titleSection hr {
   border: 1px solid rgb(231, 230, 230);
+}
+
+.subtitleSection {
+  display: flex;
+  justify-content: space-between;
 }
 .subtitle {
   display: flex;
@@ -71,7 +77,8 @@ body {
   gap: 20px;
 }
 
-.subtitle li {
+.subtitle li,
+.filter {
   padding: 8px 0px;
   color: #4b5665;
   font-size: 14px;
@@ -147,6 +154,27 @@ body {
   top: 3px;
 }
 
+.serialNo {
+  border: 1px solid #e1e4e6;
+  border-radius: 20px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-top: -30px;
+  top: 44px;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #626e79;
+}
+
+.serialNo span {
+  font-size: 18px;
+  font-weight: 200;
+}
+
 .itemContent {
   display: flex;
   position: relative;
@@ -168,8 +196,9 @@ body {
 
 .itemInfo {
   width: 50%;
+  text-align: justify;
   color: #4b5665;
-  padding: 10px;
+  padding: 10px 24px;
 }
 
 .itemInfo h6 {
@@ -180,6 +209,8 @@ body {
 .mainText {
   position: relative;
   left: 20px;
+  text-align: justify;
+  max-width: 95%;
 }
 
 .showBtn {
@@ -236,11 +267,156 @@ body {
 .viewBtn:hover {
   opacity: 0.9;
 }
+
+/* -----------------------------Related Results------------------ */
+.relatedResults {
+  padding: 20px 0px;
+}
+
+.relatedResults h2 {
+  padding-bottom: 10px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #2c384a;
+}
+
+.itemCardsBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.resultItemCard {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.resultItemCard img {
+  width: 140px;
+  align-self: center;
+  padding: 30px 0;
+}
+
+.badges {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.badge {
+  background-color: #f2f4f7;
+  color: #074786;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.resultItemCard h4 {
+  text-align: center;
+  color: #626e79;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 2px 0;
+}
+
+.resultItemCard p {
+  text-align: left;
+  color: #626e79;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 0;
+}
+
+.price {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.newPrice {
+  font-size: 20px;
+  color: #5c6874;
+  font-weight: 400;
+}
+
+.oldPrice {
+  font-size: 14px;
+  color: #9fa9b3;
+}
+
+.discount {
+  font-size: 13px;
+  color: #ef4c5d;
+}
+
+.viewDealBtn {
+  margin-top: 10px;
+  padding: 14px 116px;
+  background-color: #1b88f4;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.viewDealBtn:hover {
+  opacity: 0.9;
+}
+
+/* ----------------------------Sign up---------------------- */
+.signupSection {
+  padding: 36px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signupSection h4 {
+  width: 400px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #5c6874;
+}
+
+.emailInput {
+  padding: 14px;
+  width: 300px;
+  background-color: rgba(247, 251, 255, 0.847);
+  border: none;
+  outline: none;
+}
+
+.signUpBtn {
+  padding: 14px;
+  font-size: 14px;
+  border: none;
+  background-color: #1b88f4;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.signUpBtn:hover {
+  opacity: 0.9;
+}
 /* -------------------------Footer---------------------  */
 .footer {
   background-color: #212731;
   color: #fff;
-  height: 400px;
+  height: 380px;
   display: flex;
   justify-content: center;
 }
@@ -259,6 +435,7 @@ body {
   font-weight: 100;
   line-height: 35px;
   margin: 5px 70px;
+  cursor: pointer;
 }
 
 .categories h4,

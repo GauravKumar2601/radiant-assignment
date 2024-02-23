@@ -8,6 +8,9 @@ const ResultItem = () => {
       <div className="bestChoice">
         <GoTrophy className="trophyIcon" /> Best Choice
       </div>
+      <div className="serialNo">
+        <span>1</span>
+      </div>
       <div className="itemContent">
         <div className="itemImage">
           <img src="../../img/itemImage.png" alt="Result Image" />
