@@ -1,7 +1,10 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Open Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -19,6 +22,7 @@ body {
 
 .header li {
   margin: 0 32px;
+  cursor: pointer;
 }
 
 .searchInput {
@@ -36,7 +40,7 @@ body {
   background: transparent;
   border: none;
   position: relative;
-  left: -255px;
+  left: -256px;
   top: 9px;
   color: #282c33;
   cursor: pointer;
@@ -48,11 +52,14 @@ body {
 
 /* -----------------Homepage-----------------  */
 .homepage {
-  padding: 28px 230px;
+  padding: 16px 230px;
 }
 
 .titleSection h1 {
-  padding: 14px 2px;
+  padding: 20px 0 10px 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: #2c384a;
 }
 
 .titleSection hr {
@@ -61,29 +68,39 @@ body {
 .subtitle {
   display: flex;
   list-style: none;
-  margin: 4px 10px;
+  gap: 20px;
 }
 
 .subtitle li {
-  padding: 0 10px;
+  padding: 8px 0px;
   color: #4b5665;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.checkIcon {
+.checkIcon,
+.infoIcon {
   font-size: 18px;
   position: relative;
   top: 3px;
   color: #626e79;
 }
-y .quickLinks {
+
+.quickLinks {
   display: flex;
   list-style: none;
-  margin: 14px 20px;
+  gap: 80px;
+  padding: 22px 14px;
 }
 
 .quickLinks li {
-  padding: 0 30px;
+  padding: 0px;
+  font-size: 14px;
+  color: #4b5665;
+  cursor: pointer;
 }
+
+/* ------------------------Breadcrumbs---------------- */
 
 /* ---------------------Footer---------------------  */
 .footer {

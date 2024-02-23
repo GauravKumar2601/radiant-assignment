@@ -9,7 +9,8 @@ const TitleSection = () => {
       <hr />
       <ul className="subtitle">
         <li>
-          <IoCheckmarkCircleOutline className="checkIcon" /> Last Updated
+          <IoCheckmarkCircleOutline className="checkIcon" /> Last Updated -
+          February 22, 2020
         </li>
         <li>
           <IoInformationCircleOutline className="infoIcon" /> Advertising
