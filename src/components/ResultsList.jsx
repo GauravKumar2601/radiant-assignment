@@ -3,12 +3,11 @@ import ResultItem from "./ResultItem";
 
 const ResultList = () => {
   return (
-    <>
-      <h1>Result list</h1>
+    <div className="resultList">
       <ResultItem />
       <ResultItem />
       <ResultItem />
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { GoTrophy } from "react-icons/go";
+import { FaChevronDown } from "react-icons/fa6";
 
 const ResultItem = () => {
   return (
@@ -9,7 +10,7 @@ const ResultItem = () => {
       </div>
       <div className="itemContent">
         <div className="itemImage">
-          <img src="../../public/img/itemImage.png" alt="Result Image" />
+          <img src="../../img/itemImage.png" alt="Result Image" />
           <span className="imageCaption">Builder 1</span>
         </div>
         <div className="itemInfo">
@@ -19,18 +20,22 @@ const ResultItem = () => {
             Interface for Professional Websites and Online Stores (Black/Blue)
           </p>
           <h6>Main highlights</h6>
-          <p>
+          <p className="mainText">
             [What You Get]: Receive the WixPro website builder suite, access to
             premium design templates, an extensive library of widgets and apps,
             and detailed step-by-step guides.
           </p>
-          <button>Show more</button>
+          <button className="showBtn">
+            Show more <FaChevronDown className="downIcon" />
+          </button>
         </div>
         <div className="itemRating">
           <div className="ratingBox">
             <h2>9.8</h2>
             <span>Exceptional</span>
-            <span>5 stars ****</span>
+            <span>
+              <img src="../../img/stars.png" alt="" />
+            </span>
           </div>
           <button className="viewBtn">View</button>
         </div>
