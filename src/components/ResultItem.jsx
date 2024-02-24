@@ -24,7 +24,7 @@ const ResultItem = ({ resultItem }) => {
   } = resultItem;
 
   return (
-    <div className="resultItem">
+    <article className="resultItem">
       {bestChoice && (
         <div className="bestChoice">
           <GoTrophy className="trophyIcon" /> Best Choice
@@ -100,7 +100,7 @@ const ResultItem = ({ resultItem }) => {
           <button className="viewBtn">View</button>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

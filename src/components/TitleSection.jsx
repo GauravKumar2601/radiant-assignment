@@ -5,7 +5,7 @@ import { FaChevronDown } from "react-icons/fa6";
 
 const TitleSection = () => {
   return (
-    <div className="titleSection">
+    <header className="titleSection">
       <h1>Best Website builders in the US</h1>
       <hr />
       <div className="subtitleSection">
@@ -33,7 +33,7 @@ const TitleSection = () => {
         <li>Tooling</li>
         <li>BlueHosting</li>
       </ul>
-    </div>
+    </header>
   );
 };
 

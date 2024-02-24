@@ -4,11 +4,11 @@ import resultItems from "../data/resultItems.js";
 
 const ResultList = () => {
   return (
-    <div className="resultList">
+    <section className="resultList">
       {resultItems.map((item) => (
         <ResultItem key={item.id} resultItem={item} />
       ))}
-    </div>
+    </section>
   );
 };
 

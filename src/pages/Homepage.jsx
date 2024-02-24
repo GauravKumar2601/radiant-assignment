@@ -7,13 +7,13 @@ import SignupSection from "../components/SignupSection";
 
 const Homepage = () => {
   return (
-    <div className="homepage">
+    <main className="homepage">
       <TitleSection />
       <Breadcrumbs />
       <ResultsList />
       <RelatedResults />
       <SignupSection />
-    </div>
+    </main>
   );
 };
 

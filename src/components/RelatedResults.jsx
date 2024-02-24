@@ -4,14 +4,14 @@ import resultItemCards from "../data/resultItemCards.js";
 
 const RelatedResults = () => {
   return (
-    <div className="relatedResults">
+    <section className="relatedResults">
       <h2>Related deals you might like for</h2>
       <div className="itemCardsBox">
         {resultItemCards.map((item, index) => (
           <ResultItemCard key={index} resultItemCard={item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

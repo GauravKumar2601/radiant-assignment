@@ -38,6 +38,9 @@ $mobile-breakpoint: 586px;
 body {
   font-family: $font-family_1;
 }
+.menuIcon {
+  display: none;
+}
 .header {
   display: flex;
   justify-content: center;
@@ -736,6 +739,7 @@ body {
 @media (max-width: $medium-breakpoint) {
   .header {
     font-size: 12px;
+    display: flex;
   }
   .searchInput {
     width: 240px;
@@ -805,12 +809,22 @@ body {
 }
 
 @media (max-width: $tablet-breakpoint) {
+  .menuIcon {
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #212731;
+    color: #fff;
+    font-size: 30px;
+    padding: 8px;
+  }
+
   .header {
     flex-direction: column;
     gap: 16px;
     padding: 20px 0px;
     font-size: 16px;
-    width: 100% !important;
   }
   form {
     height: 32px;
