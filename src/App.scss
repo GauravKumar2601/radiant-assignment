@@ -17,6 +17,10 @@ $background-color_5: #f2f4f7;
 $background-color_6: rgba(247, 251, 255, 0.847);
 $background-color_7: #212731;
 $background-color_8: #fff4ed;
+$large-breakpoint: 1290px;
+$medium-breakpoint: 1080px;
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 586px;
 
 /* -----------------Homepage-----------------  */
 /* --------------------Title Section-------------- */
@@ -152,7 +156,7 @@ body {
 }
 .resultItem {
   background-color: $background-color_1;
-  margin: 8px 0px;
+  margin: 14px 0px;
   border-radius: 10px;
 }
 .bestChoice {
@@ -424,6 +428,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
   h4 {
     width: 400px;
     font-size: 30px;
@@ -507,4 +512,408 @@ body {
   position: relative;
   top: 2px;
   margin-left: 6px;
+}
+
+// ---------------------Responsiveness------------------
+// Media query for large screens
+@media (max-width: $large-breakpoint) {
+  .homepage {
+    padding: 14px 180px;
+  }
+  .titleSection {
+    h1 {
+      font-size: 44px;
+    }
+  }
+  .subtitle {
+    li {
+      padding: 6px 0px;
+      font-size: 12px;
+    }
+  }
+  .filter {
+    padding: 6px 0px;
+    font-size: 12px;
+  }
+  .checkIcon,
+  .infoIcon {
+    font-size: 14px;
+  }
+  .quickLinks {
+    padding: 18px 10px;
+    gap: 60px;
+    li {
+      font-size: 12px;
+    }
+  }
+  .breadcrumbs {
+    gap: 16px;
+    padding: 3px 0px;
+    li {
+      font-size: 12px;
+    }
+  }
+  .greatIcon {
+    font-size: 12px;
+    top: 1px;
+    left: 6px;
+  }
+  .resultList {
+    margin: 18px 0px;
+  }
+  .resultItem {
+    margin: 16px 0px;
+  }
+  .bestChoice {
+    width: 94px;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 0 6px 6px 0;
+  }
+  .trophyIcon {
+    font-size: 16px;
+    top: 2px;
+  }
+  .serialNo {
+    border-radius: 16px;
+
+    width: 32px;
+    height: 32px;
+    span {
+      font-size: 14px;
+    }
+  }
+  .itemContent {
+    top: -14px;
+  }
+  .itemImage {
+    gap: 16px;
+    padding: 36px 52px;
+  }
+  .imageCaption {
+    font-size: 14px;
+  }
+  .itemInfo {
+    padding: 8px 20px;
+    font-size: 14px;
+    h6 {
+      font-size: 14px;
+    }
+  }
+  .mainText {
+    left: 16px;
+  }
+  .highlightFeatures {
+    font-size: 14px;
+    padding: 12px 12px 3px 12px;
+    margin-bottom: 6px;
+    left: 16px;
+  }
+  .featureDiv {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .subRating {
+    width: 32px;
+    height: 22px;
+    font-size: 14px;
+  }
+
+  .extraDiv {
+    font-size: 14px;
+  }
+  .extraFeatures {
+    span {
+      font-size: 14px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .showBtn {
+    font-size: 14px;
+  }
+  .downIcon {
+    left: 3px;
+  }
+  .ratingInfoIcon {
+    top: -1px;
+  }
+  .ratingBox {
+    width: 105px;
+    height: 105px;
+    h2 {
+      font-size: 26px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  .goldStar {
+    font-size: 11px;
+  }
+  .viewBtn {
+    padding: 12px 85px;
+    font-size: 14px;
+  }
+  .relatedResults {
+    padding: 18px 0px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+  .itemCardsBox {
+    gap: 8px;
+  }
+  .resultItemCard {
+    padding: 16px;
+    img {
+      width: 150px;
+      padding: 22px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .badges {
+    gap: 12px;
+    padding: 8px 0px;
+  }
+  .badge {
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 5px;
+  }
+  .price {
+    gap: 12px;
+    padding: 4px 0px;
+  }
+  .newPrice {
+    font-size: 18px;
+  }
+  .oldPrice {
+    font-size: 13px;
+  }
+  .discount {
+    font-size: 12px;
+  }
+  .viewDealBtn {
+    margin-top: 8px;
+    padding: 12px 95px;
+    font-size: 14px;
+  }
+  .signupSection {
+    padding: 32px 4px;
+    h4 {
+      font-size: 27px;
+      width: 370px;
+    }
+  }
+  .emailInput {
+    padding: 12px;
+    width: 270px;
+  }
+  .signUpBtn {
+    padding: 12px;
+    font-size: 13px;
+  }
+  .footer {
+    height: 350px;
+  }
+  .categories,
+  .contact {
+    font-size: 13px;
+  }
+  .dropdownIcon {
+    font-size: 16px;
+  }
+}
+
+// Media query for meduim screens
+@media (max-width: $medium-breakpoint) {
+  .header {
+    font-size: 12px;
+  }
+  .searchInput {
+    width: 240px;
+  }
+  .searchBtn {
+    left: -237px;
+  }
+  .homepage {
+    padding: 16px 100px;
+  }
+  .titleSection {
+    h1 {
+      font-size: 38px;
+    }
+  }
+  .itemContent {
+    flex-wrap: wrap;
+  }
+  .itemImage {
+    flex: 1 100%;
+    padding: 30px 40px;
+    img {
+      width: 180px;
+    }
+  }
+  .itemInfo {
+    flex: 1 60%;
+    padding: 6px 6px;
+  }
+  .itemRating {
+    flex: 1 40%;
+    width: 100%;
+    padding: 0;
+  }
+  .relatedResults {
+    padding: 16px;
+  }
+  .itemCardsBox {
+    gap: 6px;
+  }
+  .resultItemCard {
+    padding: 10px;
+    img {
+      width: 130px;
+      padding: 20px;
+    }
+  }
+  .viewDealBtn {
+    margin-top: 6px;
+    padding: 12px 70px;
+    font-size: 13px;
+  }
+  .signupSection {
+    padding: 32px 8px;
+    h4 {
+      font-size: 24px;
+      width: 280px;
+    }
+  }
+  .emailInput {
+    width: 200px;
+  }
+  .signUpBtn {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: $tablet-breakpoint) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0px;
+    font-size: 16px;
+    width: 100% !important;
+  }
+  form {
+    height: 32px;
+  }
+  .searchInput {
+    width: 100%;
+  }
+  .searchBtn {
+    left: 4px;
+    top: -31px;
+  }
+  .homepage {
+    padding: 14px 60px;
+  }
+  .titleSection {
+    h1 {
+      padding: 18px 0 8px 0;
+      font-size: 32px;
+    }
+  }
+  .subtitle {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .quickLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: center;
+  }
+  .breadcrumbs {
+    gap: 12px;
+    li {
+      font-size: 12px;
+    }
+  }
+  .greatIcon {
+    font-size: 10px;
+    left: 4px;
+  }
+  .itemInfo {
+    flex: 1 50%;
+    padding: 4px 4px;
+  }
+  .itemRating {
+    flex: 1 50%;
+    padding: 0;
+  }
+  .itemCardsBox {
+    flex-wrap: wrap;
+  }
+  .relatedResults {
+    h2 {
+      font-size: 26px;
+    }
+  }
+  .signupSection {
+    text-align: center;
+    flex-direction: column;
+    h4 {
+      font-size: 24px;
+      width: 360px;
+    }
+    form {
+      padding: 36px 0px;
+    }
+  }
+  .footer {
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+  .container1 {
+    padding: 16px 0px;
+  }
+  .container2 {
+    padding: 16px 0px;
+  }
+  .categories {
+    font-size: 12px;
+  }
+  .contact {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .homepage {
+    padding: 4px 20px;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  .itemInfo {
+    flex: 1 100%;
+  }
+  .itemRating {
+    flex: 1 100%;
+  }
+  .itemRating {
+    gap: 24px;
+    padding-top: 10px;
+  }
 }

@@ -21,7 +21,9 @@ const ResultItemCard = ({ resultItemCard }) => {
         <span className="oldPrice">${oldPrice}</span>
         <span className="discount">({discount}% Off)</span>
       </div>
-      <button className="viewDealBtn">View Deal</button>
+      <button className="viewDealBtn">
+        <span>View Deal</span>
+      </button>
     </div>
   );
 };
