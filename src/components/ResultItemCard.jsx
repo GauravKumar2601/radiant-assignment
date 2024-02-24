@@ -1,19 +1,25 @@
 import React from "react";
 
-const ResultItemCard = () => {
+const ResultItemCard = ({ resultItemCard }) => {
+  const { title, itemName, image, badges, newPrice, oldPrice, discount } =
+    resultItemCard;
+
   return (
     <div className="resultItemCard">
-      <img src="../../img/itemImage.png" alt="" />
+      <img src={image} alt="" />
       <div className="badges">
-        <div className="badge">20% Off</div>
-        <div className="badge">Limited time</div>
+        {badges.map((item, index) => (
+          <div key={index} className="badge">
+            {item}
+          </div>
+        ))}
       </div>
-      <h4>Webbuilder 1</h4>
-      <p>Computer Modern clasic with wix support</p>
+      <h4>{title}</h4>
+      <p>{itemName}</p>
       <div className="price">
-        <span className="newPrice">$39,96</span>
-        <span className="oldPrice">$49.96</span>
-        <span className="discount">(20% Off)</span>
+        <span className="newPrice">${newPrice}</span>
+        <span className="oldPrice">${oldPrice}</span>
+        <span className="discount">({discount}% Off)</span>
       </div>
       <button className="viewDealBtn">View Deal</button>
     </div>

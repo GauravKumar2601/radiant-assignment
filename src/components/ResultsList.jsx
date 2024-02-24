@@ -1,13 +1,13 @@
 import React from "react";
 import ResultItem from "./ResultItem";
+import resultItems from "../data/resultItems.js";
 
 const ResultList = () => {
   return (
     <div className="resultList">
-      <ResultItem />
-      <ResultItem />
-      <ResultItem />
-      <ResultItem />
+      {resultItems.map((item) => (
+        <ResultItem key={item.id} resultItem={item} />
+      ))}
     </div>
   );
 };
